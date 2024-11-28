@@ -28,6 +28,19 @@ header {
     }
 }
 
+#menu {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: none;
+    display: none;
+
+    &>img{
+        height: 20px;
+        width: 20px;
+    }
+}
+
 #ham{
     display: none;
     color: white;
@@ -149,9 +162,10 @@ header {
 /* Body Content 1st */
 
 .container1{
-    height: 525px;
+   /* height: 525px; */
     display: flex;
     background-color: aliceblue;
+    justify-content: center;
 }
 
 .image{
@@ -160,13 +174,13 @@ header {
     align-items: center;
     justify-content: center;
     margin-left: 248px;
-    margin-top: 44px;
 }
 
 .text{
     align-items: center;
-    margin-top: 151px;
     margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
 .text h1{
@@ -284,7 +298,6 @@ header {
     gap: 32px;
     margin-bottom: 80px;
     width: 1100px;
-    height: 268px;
 }
 
 .image4{
@@ -325,7 +338,6 @@ header {
 
 .container3{
     width: 1248px;
-    height: 390px;
     margin-left: 136px;
 }
 
@@ -416,11 +428,11 @@ header {
 /* Body Content 5th */ 
 
 .container4{
-    width: 1248px;
-    height: 733px;
+    max-width: 1248px;
     display: flex;
+    justify-content: center;
     background-color: aliceblue;
-    margin-left: 135px;
+    margin: auto;
     border-radius: 20px;
     align-items: center;
     margin-top: 60px;
@@ -429,6 +441,9 @@ header {
 
 .cont7{
     align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .image11{
@@ -439,7 +454,7 @@ header {
 
 .cont8{
     width: 408px;
-    height: 613px;
+    height: 550px;
     align-items: center;
     margin-top: 100px;
     margin-left: 130px;
@@ -468,6 +483,10 @@ header {
     border: none;
     border-radius: 40px;
     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }
 
 #trucaller-free:hover{
@@ -477,6 +496,7 @@ header {
 .image12{
     margin-right: 10px;
     height: 30px;
+    border-radius: 50%;
 }
 
 #trucaller-free a{
@@ -675,7 +695,6 @@ footer{
 /* //footerr-end  */
 
 .end-part{
-    height: 8vh;
     background-color: #033ba3;
 }
 
@@ -735,4 +754,126 @@ footer{
 
 
 /* media query */
+ 
+@media screen and (max-width: 1400px){
+   
+    .container2{
+        width: 1100px;
+        margin: 20px auto;
+    }
 
+    .container3{
+        width: 1100px;
+    }
+
+    .container4{
+        margin: 30px 50px;
+        width: 1200px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1320px){
+
+    .nav-list{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    .nav-sidebar{
+        display: none;
+    }
+
+    .container1{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text {
+        width: 50%;
+        j
+
+        &>h1{
+            width: 100%;
+            font-size: 90%;
+        }
+
+        &>.buttons{
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px){
+
+    .container1{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 80%;
+        align-items: center;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+
+        &>h1{
+            display: none;
+        }
+    }
+
+    .image{
+        height: 700px;
+        width: 400px;
+        object-fit: contain;
+    }
+
+    .end-part{
+        flex-direction: column;
+    }
+
+    .end-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .endd{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .end-bottom{
+        width: 180px;
+        text-align: center
+    }
+
+    .container2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3{
+        width: 80%;
+    }
+
+    .container4{
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px){
+
+    .endd{
+        width: 80%;
+    }
+}
